@@ -5,19 +5,20 @@
 }
 
 body {
-    background-color: #d9dcd6;
+    background-color: powderblue;
 }
 
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: lightgrey;
-    opacity: 50%;
+    background-color: powderblue;
     color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 header h1 {
-    display: inline-block;
     font-size: 48px;
     opacity: 100%;
 }
@@ -25,33 +26,40 @@ header h1 {
 header nav {
     padding-top: 15px;
     margin-right: 20px;
-    float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
 
-header nav ul {
-    list-style-type: none;
+header nav ul, .content-block ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
 }
 
-header nav ul li {
-    display: inline-block;
-    margin-left: 25px;
+header nav ul li a {
+  margin: 0 10px;
+  font-size: 2.5vw;
 }
 
 a {
-    color: #ffffff;
+    color: black;
     text-decoration: none;
 }
 
 p {
     font-size: 16px;
 }
+
 footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 footer h3 {
@@ -67,6 +75,7 @@ footer h3 {
     background-position: center;
 }
 
+
 .float-left {
     float: left;
     margin-right: 25px;
@@ -78,50 +87,16 @@ footer h3 {
 }
 
 .content {
-    width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
-.benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
-   
-    color: #ffffff;
-}
-
-.benefit-block {
-    margin-bottom: 32px;
-}
-
-.benefit-block h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-block img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
 .content-block {
     margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
+    padding: 30px; 
+    height: auto;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.content-block img {
-    max-height: 200px;
+    color: #0072bb;
 }
 
 .content-block h2 {
