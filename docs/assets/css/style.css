@@ -91,6 +91,10 @@ footer h3 {
     margin-left: 20px;
 }
 
+.title-block {
+    padding-right: 15px; 
+}
+
 .content-block {
     margin-bottom: 20px;
     width: 100%;
@@ -105,8 +109,38 @@ footer h3 {
 .content-block .title-block h2 {
     margin-bottom: 20px;
     font-size: 36px;
-    border-right: 5px;
     padding-right: 5px;
-    border-color: #0072bb;
-    border-style: none solid none none;
+}
+
+.service-grid-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.service-grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    font-size: 1.2rem;
+}
+
+.service-grid-item {
+    padding: 15px 0;
+    border: 2px solid var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.service-grid-item.spotlight {
+    background-image: url("../images/bradleypaul.github.io_dm-emergency-paper-locator_.png");
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.service-grid-item.spotlight h2 {
+    height: 500px;
 }
