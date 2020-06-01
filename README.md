@@ -37,7 +37,7 @@ N/A
 
 ## Tests
 
-No tests at this tim
+No tests at this time
 
 ## Contact
 
